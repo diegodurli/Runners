@@ -13,3 +13,5 @@
 {"ts":1374781861957,"patch":[[{"diffs":[[0,"sqlite3'"],[1,", '1.3.7'"],[0,"\n\n# Bund"]],"start1":57,"start2":57,"length1":16,"length2":25}]],"length":859,"saved":false}
 {"ts":1374781992091,"patch":[[{"diffs":[[0,"2.8'"],[-1,"\ngem 'sqlite3', '1.3.7'"],[0,"\n\n# "]],"start1":47,"start2":47,"length1":31,"length2":8},{"diffs":[[0,"elopment do\n"],[1,"  gem 'sqlite3', '1.3.7'\n"],[0,"  gem 'bette"]],"start1":151,"start2":151,"length1":24,"length2":49}]],"length":861,"saved":false}
 {"ts":1374782000806,"patch":[[{"diffs":[[0,"ms.org'\n"],[1,"ruby '1.9.3'"],[0,"\ngem 'ra"]],"start1":22,"start2":22,"length1":16,"length2":28}]],"length":873,"saved":false}
+{"ts":1374783290450,"patch":[[{"diffs":[[0,"errors'\n"],[1,"  binding_of_caller\n"],[0,"end\n\n# G"]],"start1":214,"start2":214,"length1":16,"length2":36}]],"length":893,"saved":false}
+{"ts":1374783293891,"patch":[[{"diffs":[[0,"rors'\n  "],[1,"gem '"],[0,"binding_"]],"start1":216,"start2":216,"length1":16,"length2":21},{"diffs":[[0,"f_caller"],[1,"'"],[0,"\nend\n\n# "]],"start1":238,"start2":238,"length1":16,"length2":17}]],"length":899,"saved":false}
