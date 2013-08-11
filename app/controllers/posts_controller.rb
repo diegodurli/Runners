@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.find(:all, :order => 'created_at DESC')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -44,10 +44,12 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.html { redirect_to posts_path, notice: 'Post was successfully created.' }
+        format.js
         format.json { render json: @post, status: :created, location: @post }
       else
         format.html { render action: "new" }
+        format.js
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
@@ -60,7 +62,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.update_attributes(params[:post])
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+        format.html { redirect_to posts_path, notice: 'Post was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -77,6 +79,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to posts_url }
+      format.js
       format.json { head :no_content }
     end
   end

@@ -1,0 +1,5 @@
+$('#postAuthor').removeClass('has-error');
+$('#postText').removeClass('has-error');
+$('#notifications').html('');
+
+$('#feed').html('<%= escape_javascript("#{render 'posts'}").html_safe %>');

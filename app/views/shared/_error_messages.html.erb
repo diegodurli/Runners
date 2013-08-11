@@ -1,0 +1,13 @@
+<% if object.present? %>
+    <% if object.errors.any? %>
+		<div class="alert alert-block alert-danger">
+		  <button type="button" class="close" data-dismiss="alert">&times;</button>
+		  <strong>Oops!</strong><br/><br/>
+		  <ul>
+			<% object.errors.each do |field,msg| %>
+	        	<li><%= msg %></li>
+	      	<% end %>
+		  </ul><br/>
+		</div>
+	<% end %>
+<% end %>

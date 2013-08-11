@@ -1,27 +1,16 @@
-<h1>Listing posts</h1>
+<div class="page-curl">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="jumbotron"><h1>Grupo de Corrida</h1></div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p><%= render 'shared/form', object: Post.new %></p>
+        </div>
+    </div>
+</div>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th>Author</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @posts.each do |post| %>
-  <tr>
-    <td><%= post.title %></td>
-    <td><%= post.text %></td>
-    <td><%= post.author %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Post', new_post_path %>
+<div id="feed">
+    <%= render 'posts' %>
+</div>

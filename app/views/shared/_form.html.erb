@@ -1,0 +1,11 @@
+<%= form_for(object, remote: true, class: 'modal-form') do |f| %>
+    <div id="postAuthor" class="form-group">
+        <%= f.text_field :author, placeholder: "Your Name", class: "form-control" %>
+    </div>
+
+    <div id="postText" class="form-group">
+        <%= f.text_area :text, placeholder: "Your Message...", rows: 3, class: "form-control" %>
+    </div>
+
+    <%= f.submit nil, class: "btn btn-primary btn-lg" %>
+<% end %>

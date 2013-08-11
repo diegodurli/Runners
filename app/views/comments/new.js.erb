@@ -1,0 +1,2 @@
+$('#myModalBody').html('<%= escape_javascript("#{render 'shared/form', object: [@post,@comment]}").html_safe %>');
+$('#myModal').modal('show');

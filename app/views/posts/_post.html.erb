@@ -1,0 +1,4 @@
+<p><strong><%= post.author %> said:</strong><%= link_to 'Edit', edit_post_path(post) %><%= link_to 'Destroy', post, remote: true, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
+   <%= post.text %>
+</p>
+<%= link_to 'Reply', new_post_comment_path(post), class: 'btn btn-primary btn-sm', id: 'teste', remote: true %>

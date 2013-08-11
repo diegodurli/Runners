@@ -1,0 +1,19 @@
+$('#postAuthor').removeClass('has-error');
+$('#postText').removeClass('has-error');
+
+$('#notifications').html('<%= escape_javascript("#{render 'shared/error_messages', object: @post}").html_safe %>');
+
+<% if @post.errors.any? %>
+  <% @post.errors.each do |key,value| %>
+      <% if key == :author %>
+  		$('#postAuthor').addClass('has-error');
+  	<% end %>
+  	<% if key == :text %>
+  		$('#postText').addClass('has-error');
+  	<% end %>
+  <% end %>
+<% else %>
+  $('#post_author').val('');
+  $('#post_text').val('');
+  $('#feed').html('<%= escape_javascript("#{render 'posts'}").html_safe %>');
+<% end %>

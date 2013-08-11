@@ -1,0 +1,3 @@
+{"ts":1374795678200,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"<h1>Editing post</h1>\n\n<%= render 'form' %>\n\n<%= link_to 'Show', @post %> |\n<%= link_to 'Back', posts_path %>\n"]],"start1":0,"start2":0,"length1":0,"length2":110}]],"length":110}
+{"contributors":[],"silentsave":false,"ts":1374795552330,"patch":[[{"diffs":[[0,"r 'form'"],[1,", object: @post"],[0," %>\n\n<%="]],"start1":32,"start2":32,"length1":16,"length2":31}]],"length":125,"saved":false}
+{"ts":1374795560559,"patch":[[{"diffs":[[0,"%>\n\n"],[-1,"<%= link_to 'Show', @post %> |\n"],[0,"<%= "]],"start1":56,"start2":56,"length1":39,"length2":8}]],"length":94,"saved":false}
