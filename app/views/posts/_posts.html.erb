@@ -3,13 +3,6 @@
         <div class="row">
           <div class="col-lg-12">
             <%= render post %>
-
-            <% @comments = post.comments %>
-            <% if @comments.any? %>
-                <hr />
-                <h6><%= pluralize(@comments.size, 'Comment', 'Comments') %></h6>
-            	<%= render post.comments %>
-        	<% end %>
           </div>
         </div>
     </div>

@@ -2,3 +2,10 @@
    <%= post.text %>
 </p>
 <%= link_to 'Reply', new_post_comment_path(post), class: 'btn btn-primary btn-sm', id: 'teste', remote: true %>
+
+<% @comments = post.comments %>
+<% if @comments.any? %>
+    <hr />
+    <h6><%= pluralize(@comments.size, 'Comment', 'Comments') %></h6>
+    <%= render post.comments %>
+<% end %>

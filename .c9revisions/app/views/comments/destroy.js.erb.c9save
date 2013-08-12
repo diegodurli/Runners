@@ -1,0 +1,2 @@
+{"ts":1376326696966,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1376326752752,"patch":[[{"diffs":[[1,"$('#postAuthor').removeClass('has-error');\n$('#postText').removeClass('has-error');\n$('#notifications').html('');\n\n$('#feed').html('<%= escape_javascript(\"#{render 'posts'}\").html_safe %>');"]],"start1":0,"start2":0,"length1":0,"length2":190}]],"length":190,"saved":false}

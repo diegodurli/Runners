@@ -1,8 +1,5 @@
 <div class="row">
-    <div class="small-3 large-2 columns"><img src="http://placehold.it/50x50&text=[img]" /></div>
-    <div class="small-9 large-10 columns">
-        <p><b><%= comment.author %> said:</b><br></p>
-        <p><%= comment.text %></p>
-        <hr />
-    </div>
+    <p><b><%= comment.author %> said:</b></p></strong><%= link_to 'Destroy', post_comment_path(comment.post,comment), remote: true, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
+    <p><%= comment.text %></p>
+    <hr />
 </div>

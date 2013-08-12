@@ -32303,3 +32303,2390 @@ Processing by CommentsController#new as JS
   Rendered shared/_form.html.erb (1.6ms)
   Rendered comments/new.js.erb (3.2ms)
 Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:04:08 -0400
+Connecting to database specified by database.yml
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered shared/_form.html.erb (39.9ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  Rendered posts/_post.html.erb (1.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  Rendered posts/_post.html.erb (1.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81
+  Rendered posts/_posts.html.erb (231.3ms)
+  Rendered posts/index.html.erb within layouts/application (384.7ms)
+Completed 200 OK in 836ms (Views: 633.3ms | ActiveRecord: 74.1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:04:11 -0400
+Served asset /application.js - 200 OK (26ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:04:11 -0400
+Served asset /comments.js - 200 OK (3ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:04:11 -0400
+Served asset /custom.modernizr.js - 200 OK (1ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:04:11 -0400
+Served asset /application_override.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.113.1 at 2013-08-12 12:04:12 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.5.113.1 at 2013-08-12 12:04:12 -0400
+Served asset /posts.css - 200 OK (9ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:04:12 -0400
+Served asset /application_override.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:04:12 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:04:12 -0400
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:04:12 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:04:12 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:04:12 -0400
+Served asset /custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.113.1 at 2013-08-12 12:04:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.5.113.1 at 2013-08-12 12:04:12 -0400
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:04:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/84/comments/new" for 127.5.113.1 at 2013-08-12 12:04:20 -0400
+Processing by CommentsController#new as JS
+  Parameters: {"post_id"=>"84"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "84"]]
+  Rendered shared/_form.html.erb (28.5ms)
+  Rendered comments/new.js.erb (41.2ms)
+Completed 200 OK in 67ms (Views: 45.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:17:56 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (6.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+  Rendered shared/_form.html.erb (7.7ms)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  Rendered posts/_post.html.erb (2.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81[0m
+  Rendered posts/_post.html.erb (1.3ms)
+  Rendered posts/_posts.html.erb (6.2ms)
+  Rendered posts/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 36ms (Views: 28.2ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:17:57 -0400
+Served asset /application_override.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:19:15 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+  Rendered shared/_form.html.erb (1.5ms)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  Rendered posts/_post.html.erb (6.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81[0m
+  Rendered posts/_post.html.erb (1.3ms)
+  Rendered posts/_posts.html.erb (9.8ms)
+  Rendered posts/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:24:19 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+  Rendered shared/_form.html.erb (1.4ms)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  Rendered posts/_post.html.erb (2.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81[0m
+  Rendered posts/_post.html.erb (12.7ms)
+  Rendered posts/_posts.html.erb (19.4ms)
+  Rendered posts/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:24:20 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:24:20 -0400
+Served asset /application_override.css - 200 OK (0ms)
+
+
+Started GET "/posts/84/comments/new" for 127.5.113.1 at 2013-08-12 12:24:22 -0400
+Processing by CommentsController#new as JS
+  Parameters: {"post_id"=>"84"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "84"]]
+  Rendered shared/_form.html.erb (1.8ms)
+  Rendered comments/new.js.erb (3.9ms)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts/84/comments" for 127.5.113.1 at 2013-08-12 12:24:25 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14yQSbXrIx12vMzWStTE5Kj2tgK8XORz5jl7N7I4QmI=", "comment"=>{"author"=>"A", "text"=>"A"}, "commit"=>"Create Comment", "post_id"=>"84"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "84"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (44.1ms)[0m  [1mINSERT INTO "comments" ("author", "created_at", "post_id", "text", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author", "A"], ["created_at", Mon, 12 Aug 2013 16:24:25 UTC +00:00], ["post_id", nil], ["text", "A"], ["updated_at", Mon, 12 Aug 2013 16:24:25 UTC +00:00]]
+  [1m[35m (13.6ms)[0m  commit transaction
+  Rendered comments/create.js.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 3.4ms | ActiveRecord: 58.2ms)
+
+
+Started POST "/posts/84/comments" for 127.5.113.1 at 2013-08-12 12:24:31 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14yQSbXrIx12vMzWStTE5Kj2tgK8XORz5jl7N7I4QmI=", "comment"=>{"author"=>"B", "text"=>"B"}, "commit"=>"Create Comment", "post_id"=>"84"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "84"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (16.0ms)[0m  [1mINSERT INTO "comments" ("author", "created_at", "post_id", "text", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author", "B"], ["created_at", Mon, 12 Aug 2013 16:24:31 UTC +00:00], ["post_id", nil], ["text", "B"], ["updated_at", Mon, 12 Aug 2013 16:24:31 UTC +00:00]]
+  [1m[35m (10.2ms)[0m  commit transaction
+  Rendered comments/create.js.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 3.8ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:36:56 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered shared/_form.html.erb (2.1ms)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  Rendered posts/_post.html.erb (1.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81
+  Rendered posts/_post.html.erb (1.2ms)
+  Rendered posts/_posts.html.erb (9.2ms)
+  Rendered posts/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 28ms (Views: 22.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:36:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:36:57 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:37:31 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered shared/_form.html.erb (1.2ms)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  Rendered posts/_post.html.erb (1.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81
+  Rendered posts/_post.html.erb (1.2ms)
+  Rendered posts/_posts.html.erb (5.2ms)
+  Rendered posts/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:37:31 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:37:31 -0400
+Served asset /application_override.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.113.1 at 2013-08-12 12:37:31 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.5.113.1 at 2013-08-12 12:37:31 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:31 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:31 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:32 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:32 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:32 -0400
+Served asset /custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:32 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered shared/_form.html.erb (6.0ms)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  Rendered posts/_post.html.erb (2.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81
+  Rendered posts/_post.html.erb (2.3ms)
+  Rendered posts/_posts.html.erb (7.6ms)
+  Rendered posts/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Served asset /application_override.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Served asset /custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.5.113.1 at 2013-08-12 12:37:37 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/84/comments/new" for 127.5.113.1 at 2013-08-12 12:37:41 -0400
+Processing by CommentsController#new as JS
+  Parameters: {"post_id"=>"84"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "84"]]
+  Rendered shared/_form.html.erb (25.0ms)
+  Rendered comments/new.js.erb (26.5ms)
+Completed 500 Internal Server Error in 31ms
+
+NoMethodError - undefined method `merge' for 84:Fixnum:
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:1414:in `objectify_options'
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:1334:in `hidden_field'
+  app/views/shared/_form.html.erb:3:in `block in _app_views_shared__form_html_erb__3389883883763332464_70347135318380'
+  actionpack (3.2.8) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.8) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  actionpack (3.2.8) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:607:in `fields_for'
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:378:in `form_for'
+  app/views/shared/_form.html.erb:1:in `_app_views_shared__form_html_erb__3389883883763332464_70347135318380'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/comments/new.js.erb:1:in `_app_views_comments_new_js_erb___792459797638773367_70347176981820'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /opt/rh/ruby193/root/usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+  app/controllers/comments_controller.rb:16:in `new'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:425:in `_run__3363188142772982221__process_action__435527920844083142__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__1566082581255044726__call__3160643523409391062__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:39:34 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+  Rendered shared/_form.html.erb (1.6ms)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  Rendered posts/_post.html.erb (2.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81[0m
+  Rendered posts/_post.html.erb (2.3ms)
+  Rendered posts/_posts.html.erb (8.3ms)
+  Rendered posts/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.113.1 at 2013-08-12 12:39:35 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:39:35 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.5.113.1 at 2013-08-12 12:39:35 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.113.1 at 2013-08-12 12:39:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:39:35 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:39:35 -0400
+Served asset /application_override.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:39:35 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:39:35 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:39:35 -0400
+Served asset /custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.5.113.1 at 2013-08-12 12:39:35 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:39:35 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/84/comments/new" for 127.5.113.1 at 2013-08-12 12:39:37 -0400
+Processing by CommentsController#new as JS
+  Parameters: {"post_id"=>"84"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "84"]]
+  Rendered shared/_form.html.erb (2.2ms)
+  Rendered comments/new.js.erb (3.9ms)
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError - undefined method `merge' for 84:Fixnum:
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:1414:in `objectify_options'
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:1334:in `hidden_field'
+  app/views/shared/_form.html.erb:3:in `block in _app_views_shared__form_html_erb__3389883883763332464_70347135318380'
+  actionpack (3.2.8) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.8) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  actionpack (3.2.8) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:607:in `fields_for'
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:378:in `form_for'
+  app/views/shared/_form.html.erb:1:in `_app_views_shared__form_html_erb__3389883883763332464_70347135318380'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/comments/new.js.erb:1:in `_app_views_comments_new_js_erb___792459797638773367_70347176453420'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /opt/rh/ruby193/root/usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+  app/controllers/comments_controller.rb:16:in `new'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:425:in `_run__3363188142772982221__process_action__435527920844083142__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__1566082581255044726__call__3160643523409391062__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:40:09 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered shared/_form.html.erb (29.0ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  Rendered posts/_post.html.erb (6.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81
+  Rendered posts/_post.html.erb (17.6ms)
+  Rendered posts/_posts.html.erb (29.5ms)
+  Rendered posts/index.html.erb within layouts/application (62.1ms)
+Completed 200 OK in 80ms (Views: 74.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:09 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:09 -0400
+Served asset /application_override.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:09 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:09 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:09 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:10 -0400
+Served asset /custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:10 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:10 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:10 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:10 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/84/comments/new" for 127.5.113.1 at 2013-08-12 12:40:12 -0400
+Processing by CommentsController#new as JS
+  Parameters: {"post_id"=>"84"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "84"]]
+  Rendered shared/_form.html.erb (21.8ms)
+  Rendered comments/new.js.erb (23.6ms)
+Completed 500 Internal Server Error in 35ms
+
+NoMethodError - undefined method `merge' for 1:Fixnum:
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:1414:in `objectify_options'
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:1334:in `hidden_field'
+  app/views/shared/_form.html.erb:3:in `block in _app_views_shared__form_html_erb__3389883883763332464_70347173302060'
+  actionpack (3.2.8) lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
+  actionpack (3.2.8) lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
+  actionpack (3.2.8) lib/action_view/helpers/capture_helper.rb:40:in `capture'
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:607:in `fields_for'
+  actionpack (3.2.8) lib/action_view/helpers/form_helper.rb:378:in `form_for'
+  app/views/shared/_form.html.erb:1:in `_app_views_shared__form_html_erb__3389883883763332464_70347173302060'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/comments/new.js.erb:1:in `_app_views_comments_new_js_erb___792459797638773367_70347176453420'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /opt/rh/ruby193/root/usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+  app/controllers/comments_controller.rb:16:in `new'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:425:in `_run__3363188142772982221__process_action__435527920844083142__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__1566082581255044726__call__3160643523409391062__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:40:22 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+  Rendered shared/_form.html.erb (2.4ms)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  Rendered posts/_post.html.erb (1.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81[0m
+  Rendered posts/_post.html.erb (47.5ms)
+  Rendered posts/_posts.html.erb (52.5ms)
+  Rendered posts/index.html.erb within layouts/application (60.5ms)
+Completed 200 OK in 82ms (Views: 72.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:22 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:23 -0400
+Served asset /application_override.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:23 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:23 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:23 -0400
+Served asset /jquery.js - 304 Not Modified (70ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:23 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:23 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:23 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:24 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:24 -0400
+Served asset /custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/84/comments/new" for 127.5.113.1 at 2013-08-12 12:40:25 -0400
+Processing by CommentsController#new as JS
+  Parameters: {"post_id"=>"84"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "84"]]
+  Rendered shared/_form.html.erb (4.0ms)
+  Rendered comments/new.js.erb (5.8ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:40:40 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered shared/_form.html.erb (2.4ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  Rendered posts/_post.html.erb (25.9ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81
+  Rendered posts/_post.html.erb (10.5ms)
+  Rendered posts/_posts.html.erb (46.7ms)
+  Rendered posts/index.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 214ms (Views: 212.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:41 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:41 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:41 -0400
+Served asset /application_override.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:41 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.113.1 at 2013-08-12 12:40:41 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:42 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:42 -0400
+Served asset /custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:42 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:42 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:40:42 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/84/comments/new" for 127.5.113.1 at 2013-08-12 12:40:44 -0400
+Processing by CommentsController#new as JS
+  Parameters: {"post_id"=>"84"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "84"]]
+  Rendered shared/_form.html.erb (4.1ms)
+  Rendered comments/new.js.erb (5.4ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts/84/comments" for 127.5.113.1 at 2013-08-12 12:40:48 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14yQSbXrIx12vMzWStTE5Kj2tgK8XORz5jl7N7I4QmI=", "comment"=>{"post_id"=>"84", "author"=>"A", "text"=>"A"}, "commit"=>"Create Comment", "post_id"=>"84"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "84"]]
+Completed 500 Internal Server Error in 3ms
+
+ActiveModel::MassAssignmentSecurity::Error - Can't mass-assign protected attributes: post_id:
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:48:in `process_removed_attributes'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:20:in `debug_protected_attribute_removal'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:12:in `sanitize'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security.rb:230:in `sanitize_for_mass_assignment'
+  activerecord (3.2.8) lib/active_record/attribute_assignment.rb:75:in `assign_attributes'
+  activerecord (3.2.8) lib/active_record/base.rb:498:in `initialize'
+  app/controllers/comments_controller.rb:28:in `create'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:425:in `_run__3363188142772982221__process_action__1573897350144365654__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__1566082581255044726__call__3160643523409391062__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/posts/84/comments" for 127.5.113.1 at 2013-08-12 12:40:51 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14yQSbXrIx12vMzWStTE5Kj2tgK8XORz5jl7N7I4QmI=", "comment"=>{"post_id"=>"84", "author"=>"B", "text"=>"B"}, "commit"=>"Create Comment", "post_id"=>"84"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "84"]]
+Completed 500 Internal Server Error in 7ms
+
+ActiveModel::MassAssignmentSecurity::Error - Can't mass-assign protected attributes: post_id:
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:48:in `process_removed_attributes'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:20:in `debug_protected_attribute_removal'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:12:in `sanitize'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security.rb:230:in `sanitize_for_mass_assignment'
+  activerecord (3.2.8) lib/active_record/attribute_assignment.rb:75:in `assign_attributes'
+  activerecord (3.2.8) lib/active_record/base.rb:498:in `initialize'
+  app/controllers/comments_controller.rb:28:in `create'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:425:in `_run__3363188142772982221__process_action__1573897350144365654__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__1566082581255044726__call__3160643523409391062__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:43:54 -0400
+Connecting to database specified by database.yml
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered shared/_form.html.erb (6.8ms)
+  [1m[35mPost Load (2.1ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  Rendered posts/_post.html.erb (147.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81
+  Rendered posts/_post.html.erb (4.6ms)
+  Rendered posts/_posts.html.erb (164.2ms)
+  Rendered posts/index.html.erb within layouts/application (220.3ms)
+Completed 200 OK in 473ms (Views: 357.9ms | ActiveRecord: 47.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.113.1 at 2013-08-12 12:43:56 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.5.113.1 at 2013-08-12 12:43:56 -0400
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:43:56 -0400
+Served asset /application_override.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:43:56 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:43:56 -0400
+Served asset /jquery.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:43:56 -0400
+Served asset /custom.modernizr.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:43:56 -0400
+Served asset /comments.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:43:56 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.113.1 at 2013-08-12 12:43:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.5.113.1 at 2013-08-12 12:43:57 -0400
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:43:57 -0400
+Served asset /application.js - 304 Not Modified (49ms)
+
+
+Started GET "/posts/84/comments/new" for 127.5.113.1 at 2013-08-12 12:44:15 -0400
+Processing by CommentsController#new as JS
+  Parameters: {"post_id"=>"84"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "84"]]
+  Rendered shared/_form.html.erb (8.7ms)
+  Rendered comments/new.js.erb (10.7ms)
+Completed 200 OK in 44ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts/84/comments" for 127.5.113.1 at 2013-08-12 12:44:18 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14yQSbXrIx12vMzWStTE5Kj2tgK8XORz5jl7N7I4QmI=", "comment"=>{"post_id"=>"84", "author"=>"A", "text"=>"A"}, "commit"=>"Create Comment", "post_id"=>"84"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "84"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (19.8ms)[0m  INSERT INTO "comments" ("author", "created_at", "post_id", "text", "updated_at") VALUES (?, ?, ?, ?, ?)  [["author", "A"], ["created_at", Mon, 12 Aug 2013 16:44:18 UTC +00:00], ["post_id", 84], ["text", "A"], ["updated_at", Mon, 12 Aug 2013 16:44:18 UTC +00:00]]
+  [1m[36m (28.3ms)[0m  [1mcommit transaction[0m
+  Rendered comments/create.js.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 3.7ms | ActiveRecord: 48.3ms)
+
+
+Started POST "/posts/84/comments" for 127.5.113.1 at 2013-08-12 12:44:21 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14yQSbXrIx12vMzWStTE5Kj2tgK8XORz5jl7N7I4QmI=", "comment"=>{"post_id"=>"84", "author"=>"B", "text"=>"B"}, "commit"=>"Create Comment", "post_id"=>"84"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "84"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (22.2ms)[0m  INSERT INTO "comments" ("author", "created_at", "post_id", "text", "updated_at") VALUES (?, ?, ?, ?, ?)  [["author", "B"], ["created_at", Mon, 12 Aug 2013 16:44:21 UTC +00:00], ["post_id", 84], ["text", "B"], ["updated_at", Mon, 12 Aug 2013 16:44:21 UTC +00:00]]
+  [1m[36m (51.6ms)[0m  [1mcommit transaction[0m
+  Rendered comments/create.js.erb (0.0ms)
+Completed 200 OK in 82ms (Views: 2.4ms | ActiveRecord: 74.0ms)
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:44:45 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+  Rendered shared/_form.html.erb (1.6ms)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 84
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered posts/_post.html.erb (4.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81[0m
+  Rendered posts/_post.html.erb (1.8ms)
+  Rendered posts/_posts.html.erb (8.3ms)
+  Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.113.1 at 2013-08-12 12:44:46 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.113.1 at 2013-08-12 12:44:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:44:46 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:44:46 -0400
+Served asset /application_override.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.5.113.1 at 2013-08-12 12:44:46 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:44:46 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:44:46 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.5.113.1 at 2013-08-12 12:44:46 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:44:46 -0400
+Served asset /custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:44:46 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:44:46 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:48:52 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+  Rendered shared/_form.html.erb (1.5ms)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 84
+  Rendered comments/_comment.html.erb (74.1ms)
+  Rendered posts/_post.html.erb (79.5ms)
+  Rendered posts/_posts.html.erb (91.4ms)
+  Rendered posts/index.html.erb within layouts/application (94.8ms)
+Completed 500 Internal Server Error in 98ms
+
+NameError - undefined local variable or method `post' for #<#<Class:0x007f8f6470fc60>:0x007f8f581797a8>:
+  app/views/comments/_comment.html.erb:2:in `_app_views_comments__comment_html_erb__4218847540491434701_70126817683980'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:351:in `block in collection_with_template'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:348:in `collection_with_template'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:250:in `render_collection'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:234:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:233:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/_post.html.erb:10:in `_app_views_posts__post_html_erb___3752808619829198142_70126919609580'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/_posts.html.erb:5:in `block in _app_views_posts__posts_html_erb__3003757825853606125_70126918284520'
+  app/views/posts/_posts.html.erb:1:in `_app_views_posts__posts_html_erb__3003757825853606125_70126918284520'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/index.html.erb:15:in `_app_views_posts_index_html_erb__3156242829197798947_70126919633480'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /opt/rh/ruby193/root/usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+  app/controllers/posts_controller.rb:7:in `index'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__2053454572961080424__process_action__1254458941145365114__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3366893693679787595__call__4590080930767795215__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70126921526560/variables" for 127.5.113.1 at 2013-08-12 12:48:56 -0400
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:49:18 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered shared/_form.html.erb (1.5ms)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 84[0m
+  Rendered comments/_comment.html.erb (3.4ms)
+  Rendered posts/_post.html.erb (9.0ms)
+  Rendered posts/_posts.html.erb (11.1ms)
+  Rendered posts/index.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionController::RoutingError - No route matches {:action=>"edit", :controller=>"comments", :post_id=>nil, :id=>#<Comment id: 14, author: "A", text: "A", post_id: 84, created_at: "2013-08-12 16:44:18", updated_at: "2013-08-12 16:44:18">}:
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:532:in `raise_routing_error'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:528:in `rescue in generate'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:520:in `generate'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:561:in `generate'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:586:in `url_for'
+  actionpack (3.2.8) lib/action_dispatch/routing/url_for.rb:148:in `url_for'
+  actionpack (3.2.8) lib/action_view/helpers/url_helper.rb:107:in `url_for'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:213:in `edit_post_comment_path'
+  app/views/comments/_comment.html.erb:2:in `_app_views_comments__comment_html_erb__4218847540491434701_70126817290840'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:351:in `block in collection_with_template'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:348:in `collection_with_template'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:250:in `render_collection'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:234:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:233:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/_post.html.erb:10:in `_app_views_posts__post_html_erb___3752808619829198142_70126919609580'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/_posts.html.erb:5:in `block in _app_views_posts__posts_html_erb__3003757825853606125_70126918284520'
+  app/views/posts/_posts.html.erb:1:in `_app_views_posts__posts_html_erb__3003757825853606125_70126918284520'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/index.html.erb:15:in `_app_views_posts_index_html_erb__3156242829197798947_70126919633480'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /opt/rh/ruby193/root/usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+  app/controllers/posts_controller.rb:7:in `index'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__2053454572961080424__process_action__1254458941145365114__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3366893693679787595__call__4590080930767795215__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70126817373720/variables" for 127.5.113.1 at 2013-08-12 12:49:21 -0400
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:50:15 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+  Rendered shared/_form.html.erb (1.5ms)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 84
+  Rendered comments/_comment.html.erb (33.2ms)
+  Rendered posts/_post.html.erb (44.7ms)
+  Rendered posts/_posts.html.erb (47.0ms)
+  Rendered posts/index.html.erb within layouts/application (53.5ms)
+Completed 500 Internal Server Error in 57ms
+
+NoMethodError - undefined method `comment_path' for #<#<Class:0x007f8f6470fc60>:0x007f8f500f2328>:
+  actionpack (3.2.8) lib/action_dispatch/routing/polymorphic_routes.rb:129:in `polymorphic_url'
+  actionpack (3.2.8) lib/action_dispatch/routing/polymorphic_routes.rb:135:in `polymorphic_path'
+  actionpack (3.2.8) lib/action_view/helpers/url_helper.rb:111:in `url_for'
+  actionpack (3.2.8) lib/action_view/helpers/url_helper.rb:242:in `link_to'
+  app/views/comments/_comment.html.erb:2:in `_app_views_comments__comment_html_erb__4218847540491434701_70126750300680'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:351:in `block in collection_with_template'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:348:in `collection_with_template'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:250:in `render_collection'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:234:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:233:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/_post.html.erb:10:in `_app_views_posts__post_html_erb___3752808619829198142_70126919609580'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/_posts.html.erb:5:in `block in _app_views_posts__posts_html_erb__3003757825853606125_70126918284520'
+  app/views/posts/_posts.html.erb:1:in `_app_views_posts__posts_html_erb__3003757825853606125_70126918284520'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/index.html.erb:15:in `_app_views_posts_index_html_erb__3156242829197798947_70126919633480'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /opt/rh/ruby193/root/usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+  app/controllers/posts_controller.rb:7:in `index'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__2053454572961080424__process_action__1254458941145365114__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3366893693679787595__call__4590080930767795215__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70126686705860/variables" for 127.5.113.1 at 2013-08-12 12:50:20 -0400
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:51:02 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered shared/_form.html.erb (5.2ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 84[0m
+  Rendered comments/_comment.html.erb (22.2ms)
+  Rendered posts/_post.html.erb (38.9ms)
+  Rendered posts/_posts.html.erb (54.8ms)
+  Rendered posts/index.html.erb within layouts/application (74.1ms)
+Completed 500 Internal Server Error in 84ms
+
+ActionController::RoutingError - No route matches {:action=>"show", :controller=>"comments", :post_id=>nil, :id=>#<Comment id: 14, author: "A", text: "A", post_id: 84, created_at: "2013-08-12 16:44:18", updated_at: "2013-08-12 16:44:18">}:
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:532:in `raise_routing_error'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:528:in `rescue in generate'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:520:in `generate'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:561:in `generate'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:586:in `url_for'
+  actionpack (3.2.8) lib/action_dispatch/routing/url_for.rb:148:in `url_for'
+  actionpack (3.2.8) lib/action_view/helpers/url_helper.rb:107:in `url_for'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:213:in `post_comment_path'
+  app/views/comments/_comment.html.erb:2:in `_app_views_comments__comment_html_erb__4218847540491434701_70126750409280'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:351:in `block in collection_with_template'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:348:in `collection_with_template'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:250:in `render_collection'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:234:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:233:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/_post.html.erb:10:in `_app_views_posts__post_html_erb___3752808619829198142_70126919609580'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/_posts.html.erb:5:in `block in _app_views_posts__posts_html_erb__3003757825853606125_70126918284520'
+  app/views/posts/_posts.html.erb:1:in `_app_views_posts__posts_html_erb__3003757825853606125_70126918284520'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/index.html.erb:15:in `_app_views_posts_index_html_erb__3156242829197798947_70126919633480'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /opt/rh/ruby193/root/usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+  app/controllers/posts_controller.rb:7:in `index'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__2053454572961080424__process_action__1254458941145365114__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3366893693679787595__call__4590080930767795215__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70126686812100/variables" for 127.5.113.1 at 2013-08-12 12:51:05 -0400
+
+
+Started POST "/__better_errors/70126686812100/eval" for 127.5.113.1 at 2013-08-12 12:54:58 -0400
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:56:09 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+  Rendered shared/_form.html.erb (2.1ms)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 84
+  Rendered comments/_comment.html.erb (3.4ms)
+  Rendered posts/_post.html.erb (33.8ms)
+  Rendered posts/_posts.html.erb (35.9ms)
+  Rendered posts/index.html.erb within layouts/application (40.2ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionController::RoutingError - No route matches {:action=>"show", :controller=>"comments", :post_id=>#<Comment id: 14, author: "A", text: "A", post_id: 84, created_at: "2013-08-12 16:44:18", updated_at: "2013-08-12 16:44:18">}:
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:532:in `raise_routing_error'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:528:in `rescue in generate'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:520:in `generate'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:561:in `generate'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:586:in `url_for'
+  actionpack (3.2.8) lib/action_dispatch/routing/url_for.rb:148:in `url_for'
+  actionpack (3.2.8) lib/action_view/helpers/url_helper.rb:107:in `url_for'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:213:in `post_comment_path'
+  app/views/comments/_comment.html.erb:2:in `_app_views_comments__comment_html_erb__4218847540491434701_70126749648680'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:351:in `block in collection_with_template'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:348:in `collection_with_template'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:250:in `render_collection'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:234:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:233:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/_post.html.erb:10:in `_app_views_posts__post_html_erb___3752808619829198142_70126919609580'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/_posts.html.erb:5:in `block in _app_views_posts__posts_html_erb__3003757825853606125_70126918284520'
+  app/views/posts/_posts.html.erb:1:in `_app_views_posts__posts_html_erb__3003757825853606125_70126918284520'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/partial_renderer.rb:237:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:41:in `render_partial'
+  actionpack (3.2.8) lib/action_view/helpers/rendering_helper.rb:27:in `render'
+  app/views/posts/index.html.erb:15:in `_app_views_posts_index_html_erb__3156242829197798947_70126919633480'
+  actionpack (3.2.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /opt/rh/ruby193/root/usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+  app/controllers/posts_controller.rb:7:in `index'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__2053454572961080424__process_action__1254458941145365114__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3366893693679787595__call__4590080930767795215__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70126749729240/variables" for 127.5.113.1 at 2013-08-12 12:56:12 -0400
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:57:14 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered shared/_form.html.erb (1.7ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 84[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 84 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 84 LIMIT 1[0m
+  Rendered comments/_comment.html.erb (28.3ms)
+  Rendered posts/_post.html.erb (39.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81
+  Rendered posts/_post.html.erb (2.7ms)
+  Rendered posts/_posts.html.erb (46.4ms)
+  Rendered posts/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 71ms (Views: 68.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:57:14 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.113.1 at 2013-08-12 12:57:15 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:57:15 -0400
+Served asset /application_override.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.5.113.1 at 2013-08-12 12:57:15 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:15 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:15 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:15 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:15 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:15 -0400
+Served asset /custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:15 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:15 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.5.113.1 at 2013-08-12 12:57:24 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered shared/_form.html.erb (1.8ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 84
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = 84[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 84 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 84 LIMIT 1[0m
+  Rendered comments/_comment.html.erb (19.2ms)
+  Rendered posts/_post.html.erb (29.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = 81
+  Rendered posts/_post.html.erb (1.9ms)
+  Rendered posts/_posts.html.erb (35.1ms)
+  Rendered posts/index.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 77ms (Views: 59.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:25 -0400
+Served asset /bootstrap.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.113.1 at 2013-08-12 12:57:25 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application_override.css?body=1" for 127.5.113.1 at 2013-08-12 12:57:25 -0400
+Served asset /application_override.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.5.113.1 at 2013-08-12 12:57:25 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.5.113.1 at 2013-08-12 12:57:25 -0400
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:25 -0400
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:25 -0400
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:25 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/custom.modernizr.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:25 -0400
+Served asset /custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.113.1 at 2013-08-12 12:57:26 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started DELETE "/posts/84/comments/14" for 127.5.113.1 at 2013-08-12 12:57:31 -0400
+Processing by CommentsController#destroy as JS
+  Parameters: {"post_id"=>"84", "id"=>"14"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "84"]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.4ms)[0m  DELETE FROM "comments" WHERE "comments"."id" = ?  [["id", 14]]
+  [1m[36m (30.3ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 43ms
+
+ActionView::MissingTemplate - Missing template comments/destroy, application/destroy with {:locale=>[:en], :formats=>[:js, :html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/var/lib/stickshift/51eed4925973ca954d00001a/app-root/data/566962/app/views"
+:
+  actionpack (3.2.8) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.8) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /opt/rh/ruby193/root/usr/share/ruby/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+  app/controllers/comments_controller.rb:61:in `destroy'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:425:in `_run__186191642760934556__process_action__3146495470007435026__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3366893693679787595__call__4590080930767795215__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
