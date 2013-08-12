@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
@@ -29,3 +30,9 @@ The Cloud9 IDE team
 
 Visit http://docs.c9.io for documentation, or http://support.c9.io for support. 
 To watch some training videos, visit http://www.youtube.com/user/c9ide
+=======
+Runners
+=======
+
+A place to have pieces of information about a Runner's Group.
+>>>>>>> d39466fe20defe30c7a9e9a4b1297ee8db2768e6
